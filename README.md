@@ -1,1 +1,1 @@
-# [Exercise 1](https://github.com/ibros1/react-work-shop/tree/main/exercises/exercise1)
+# [Exercise 1](https://github.com/ibros1/react-work-shop/tree/main/exercise1)
