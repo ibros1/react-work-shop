@@ -5,3 +5,5 @@
 ## [Exercise 2](https://github.com/ibros1/react-work-shop/tree/main/exercise2)
 
 ## [Exercise 3](https://github.com/ibros1/react-work-shop/tree/main/exercise3)
+
+## [Exercise 4](https://github.com/ibros1/react-work-shop/tree/main/exercise4)
