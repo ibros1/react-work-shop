@@ -45,7 +45,7 @@ const App = () => {
   };
 
   const handleRemove = (id) => {
-    const updatedProducts = products.filter((product) => product.id === id);
+    const updatedProducts = products.filter((product) => product.id !== id);
 
     setProducts(updatedProducts);
   };
