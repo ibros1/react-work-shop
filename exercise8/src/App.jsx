@@ -5,6 +5,7 @@ const App = () => {
   const [timeLeft, setTimeLeft] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [isStoped, setIsStoped] = useState(false);
+  const [isAlarmed, setIsAlarmed] = useState(false);
   console.log(isRunning);
   useEffect(() => {
     let timerId;
@@ -16,6 +17,12 @@ const App = () => {
 
     return () => clearTimeout(timerId);
   }, [isRunning, timeLeft]);
+
+  useEffect(() => {
+    if (!isRunning && timeLeft === 0 && !isAlarmed) {
+      setIsAlarmed(true);
+    }
+  }, [isRunning, timeLeft, isAlarmed]);
 
   const handleChange = (e) => {
     const value = e.target.value;
