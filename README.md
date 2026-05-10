@@ -8,14 +8,14 @@
 
 ## [Exercise 4](https://github.com/ibros1/react-work-shop/tree/main/exercise4)
 
-## [Exercise 4](https://github.com/ibros1/react-work-shop/tree/main/exercise5)
+## [Exercise 5](https://github.com/ibros1/react-work-shop/tree/main/exercise5)
 
-## [Exercise 4](https://github.com/ibros1/react-work-shop/tree/main/exercise6)
+## [Exercise 6](https://github.com/ibros1/react-work-shop/tree/main/exercise6)
 
-## [Exercise 4](https://github.com/ibros1/react-work-shop/tree/main/exercise7)
+## [Exercise 7](https://github.com/ibros1/react-work-shop/tree/main/exercise7)
 
-## [Exercise 4](https://github.com/ibros1/react-work-shop/tree/main/exercise8)
+## [Exercise 8](https://github.com/ibros1/react-work-shop/tree/main/exercise8)
 
-## [Exercise 4](https://github.com/ibros1/react-work-shop/tree/main/exercise9)
+## [Exercise 9](https://github.com/ibros1/react-work-shop/tree/main/exercise9)
 
-## [Exercise 4](https://github.com/ibros1/react-work-shop/tree/main/exercise10)
+## [Exercise 10](https://github.com/ibros1/react-work-shop/tree/main/exercise10)
