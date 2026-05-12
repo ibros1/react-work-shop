@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 
 const App = () => {
-  const initialState = {
+  const intialState = {
     step: 1,
     firstname: "",
     lastname: "",
@@ -11,10 +11,10 @@ const App = () => {
 
   const reducer = (state, action) => {
     switch (action.type) {
-      case "UPDATE_FEILD":
+      case "UPDATE_FIELD":
         return {
           ...state,
-          [action.field]: action.value,
+          [action.field]: action.payload,
         };
       case "NEXT_STEP":
         return {
@@ -26,14 +26,25 @@ const App = () => {
           ...state,
           step: state.step - 1,
         };
+
       case "reset":
-        return initialState;
+        return intialState;
+
       default:
         return state;
     }
   };
-  const [state, dispatch] = useReducer(reducer, initialState);
+
+  const [state, dispatch] = useReducer(reducer, intialState);
   console.log(state);
+  const handleChange = (e) => {
+    dispatch({
+      type: "UPDATE_FIELD",
+      field: e.target.name,
+      payload: e.target.value,
+    });
+  };
+
   const nextStep = () => {
     dispatch({
       type: "NEXT_STEP",
@@ -45,25 +56,19 @@ const App = () => {
     });
   };
 
-  const handleChange = (e) => {
-    dispatch({
-      type: "UPDATE_FEILD",
-      field: e.target.name,
-      value: e.target.value,
-    });
-  };
   const handleSubmit = () => {
-    alert("Form submitted successfully!");
+    alert("Successfully submited!");
     dispatch({
       type: "reset",
     });
   };
   return (
     <div>
-      <h1>Multi setp registration</h1>
+      <h1>Form submission steps</h1>
+
       {state.step === 1 && (
         <div className="">
-          <label htmlFor="">First Name:</label> <br />
+          <label htmlFor="">firstname</label> <br />
           <input
             onChange={handleChange}
             type="text"
@@ -72,53 +77,55 @@ const App = () => {
             id=""
           />
           <br />
-          <label htmlFor="">Last Name:</label>
+          <label htmlFor="">lastname</label>
           <br />
           <input
-            value={state.lastname}
             onChange={handleChange}
             type="text"
             name="lastname"
+            value={state.lastname}
             id=""
           />
           <br />
-          <button onClick={nextStep}>Next Step</button>
+          <button onClick={nextStep}>Next</button>
         </div>
       )}
+
       {state.step === 2 && (
         <div className="">
-          <label htmlFor="">Email:</label>
+          <label htmlFor="">email</label>
           <br />
           <input
             onChange={handleChange}
-            value={state.email}
             type="text"
             name="email"
+            value={state.email}
             id=""
           />
           <br />
-          <label htmlFor="">phone:</label>
+          <label htmlFor="">phone</label>
           <br />
           <input
             onChange={handleChange}
-            value={state.phone}
             type="text"
             name="phone"
+            value={state.phone}
             id=""
           />
           <br />
-          <button onClick={prevStep}>Prev Step</button>
-          <button onClick={nextStep}>Next Step</button>
+          <button onClick={prevStep}>prev</button>
+          <button onClick={nextStep}>Next</button>
         </div>
       )}
+
       {state.step === 3 && (
         <div className="">
           <h2>Preview form</h2>
-          <h3>Firstname : {state.firstname}</h3>
-          <h3>Lastname : {state.lastname}</h3>
-          <h3>Email : {state.email}</h3>
-          <h3>Phone : {state.phone}</h3>
-          <button onClick={prevStep}>Prev Step</button>
+          <h3>firstname : {state.firstname} </h3>
+          <h3>lastname : {state.lastname} </h3>
+          <h3>email : {state.email}</h3>
+          <h3>phone : {state.phone} </h3>
+          <button onClick={prevStep}>prev</button>
           <button onClick={handleSubmit}>Submit</button>
         </div>
       )}

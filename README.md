@@ -27,3 +27,5 @@
 ## [Exercise 13](https://github.com/ibros1/react-work-shop/tree/main/exercise13)
 
 ## [Exercise 14](https://github.com/ibros1/react-work-shop/tree/main/exercise14)
+
+## [Exercise 15](https://github.com/ibros1/react-work-shop/tree/main/exercise15)
