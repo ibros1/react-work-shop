@@ -33,3 +33,5 @@
 ## [Exercise 16](https://github.com/ibros1/react-work-shop/tree/main/exercise16)
 
 ## [Exercise 17](https://github.com/ibros1/react-work-shop/tree/main/exercise17)
+
+## [Exercise 17](https://github.com/ibros1/react-work-shop/tree/main/exercise18)
