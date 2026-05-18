@@ -1,0 +1,58 @@
+body {
+  background-color: pink;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.TodoForm {
+  display: flex;
+  gap: 4px;
+}
+.todoApp {
+  background-color: white;
+  padding: 10px 8px;
+  border-radius: 8px;
+}
+.TodoForm {
+  margin-bottom: 20px;
+}
+.TodoForm input {
+  border: 1px solid gainsboro;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.TodoForm button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.todoApp .myTodosH1 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.todoApp li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todoApp li > div {
+  display: flex;
+  align-items: center;
+}
+
+.todoApp li button {
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
