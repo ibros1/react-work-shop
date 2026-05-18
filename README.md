@@ -38,4 +38,4 @@
 
 ## [Exercise 19](https://github.com/ibros1/react-work-shop/tree/main/exercise19)
 
-![Preview](../react/exercise19/src/assets/Screenshot%202026-05-18%20115653.png)
+![Preview](https://github.com/ibros1/react-work-shop/tree/main/exercise19/src/assets/Screenshot%202026-05-18%20115653.png)
