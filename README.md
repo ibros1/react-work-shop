@@ -41,3 +41,7 @@
 ![Preview](https://github.com/ibros1/react-work-shop/tree/main/exercise19/src/assets/Screenshot%202026-05-18%20115653.png)
 
 ## [Exercise 20](https://github.com/ibros1/react-work-shop/tree/main/exercise20)
+
+## [Exercise 21](https://github.com/ibros1/react-work-shop/tree/main/exercise21)
+
+![Preview](./exercise21/public/Screenshot_2025-02-05_at_2.32.48_AM.webp)
