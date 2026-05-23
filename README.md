@@ -49,3 +49,5 @@
 ## [Exercise 22](https://github.com/ibros1/react-work-shop/tree/main/exercise22)
 
 ![Preview](./exercise22/public/Screenshot%202026-05-20%20110146.png)
+
+## [Exercise 23](https://github.com/ibros1/react-work-shop/tree/main/exercise23)
