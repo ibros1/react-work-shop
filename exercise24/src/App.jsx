@@ -4,8 +4,11 @@ const App = () => {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors },
   } = useForm();
+
+  const password = watch("password");
 
   const onSubmit = (value) => {
     console.log(value);
